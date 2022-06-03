@@ -13,8 +13,8 @@
     <header>
         <strong>VANTA GAMES</strong>
         <ol>
-            <li><a href="index.html">main</a></li>
-            <li><a href="links.html">links</a></li>
+            <li><a onclick="scrollToView('stigma');">STIGMA</a></li>
+            <li><a onclick="scrollToView('squve');">sqUve</a></li>
         </ol>
     </header>
 
@@ -28,18 +28,20 @@
         </section>
         
         <section>
-            <a href="stigma.html"><h2>STIGMA</h2></a>
+            <h2 id="stigma">STIGMA</h2>
             <hr>
             <p>STIGMA는 흑백과 보라 위주 심플한 4키 무료 리듬 게임입니다.<br>
-                
-                <br>
+            <br>
+            <a href="#" class="button">더보기</a>
         </section>
-            
+        
         <section>
-            <a href="squve.html"><h2>sqUve</h2></a>
+            <h2 id="squve">sqUve</h2>
             <hr>
             <p>매우 혼란한 리듬 게임입니다! <br>
                 9키에 노트가 나올 수 있는 곳이 22곳이나 됩니다!</p>
+            <br>
+            <a href="#" class="button">더보기</a>
         </section>
     </main>
     
@@ -63,6 +65,8 @@
     <footer>
         ⓒ 2018-2022. VANTA GAMES. All Rights Reserved.
     </footer>
+
+    <script src="index.js"></script>
 
 </body>
 </html>

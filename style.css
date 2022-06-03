@@ -1,5 +1,10 @@
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 
+:root{
+    --v-dark_l: #24282D;
+    --v-dark: #2B2F34;
+}
+
 *{
     margin: 0;
     color: white;
@@ -7,7 +12,7 @@
 }
 
 header{
-    background-color: #24282D;
+    background-color: var(--v-dark_l);
     height: 5vh;
     width: 100vw;
     
@@ -16,6 +21,8 @@ header{
     justify-content: center;
     
     gap: 2vw;
+
+    position: fixed;
 }
 
 ol{
@@ -36,7 +43,7 @@ li{
 
 body{
     overflow-x: hidden;
-    background-color: #2B2F34;
+    background-color: var(--v-dark);
     width: 100vw;
     
     display: flex;
@@ -70,11 +77,41 @@ p{
 }
 
 footer{
-    background-color: #24282D;
+    background-color: var(--v-dark_l);
     height: 5vh;
     width: 100vw;
      
     display: flex;
     align-items: center;
     justify-content: center;   
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.button{
+    border: none;
+    background-color: white;
+    color: var(--v-dark);
+    padding: 10px;
+    font-size: 1.5vh;
+    font-weight: bold;
+    border-radius: 6px;
+
+
+    transition-duration: 0.2s;
+    transition-property: color;
+    transition-property: background-color;
+}
+
+.button:hover{
+    border: none;
+    background-color: var(--v-dark);
+    color: white;
+    padding: 10px;
 }
